@@ -1,4 +1,6 @@
-   **The Chat API - README**
+=
+**The Chat API - README**
+=
 
 ***Overview***
 --------
