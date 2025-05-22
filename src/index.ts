@@ -6,8 +6,7 @@ import multipart from '@fastify/multipart';
 
 import dbPlugin from './plugins/database';
 import authPlugin from './plugins/auth';
-import accountRoutes from './routes/account';
-import messageRoutes from './routes/message';
+import api from './routes/api';
 
 dotenv.config();
 
@@ -28,8 +27,7 @@ async function buildServer(): Promise<FastifyInstance> {
   });
 
   await server.register(multipart);
-  await server.register(accountRoutes, { prefix: '/account' });
-  await server.register(messageRoutes, { prefix: '/message' });
+  await server.register(api, { prefix: '/api' });
 
   return server;
 }

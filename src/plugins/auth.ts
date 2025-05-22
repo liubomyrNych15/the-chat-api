@@ -1,5 +1,5 @@
 import fp from 'fastify-plugin';
-import type { FastifyPluginAsync, FastifyRequest, FastifyReply } from 'fastify';
+import type { FastifyPluginAsync, FastifyReply } from 'fastify';
 import bcrypt from 'bcrypt';
 
 declare module 'fastify' {
