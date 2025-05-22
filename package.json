@@ -1,0 +1,42 @@
+{
+  "name": "the-chat-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "ts-node": {
+    "esm": true
+  },
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liubomyrNych15/the-chat-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liubomyrNych15/the-chat-api/issues"
+  },
+  "homepage": "https://github.com/liubomyrNych15/the-chat-api#readme",
+  "dependencies": {
+    "@fastify/basic-auth": "^6.2.0",
+    "@fastify/multipart": "^9.0.3",
+    "@fastify/postgres": "^6.0.2",
+    "@fastify/swagger": "^9.5.1",
+    "@fastify/swagger-ui": "^5.2.2",
+    "@types/bcrypt": "^5.0.2",
+    "bcrypt": "^6.0.0",
+    "dotenv": "^16.5.0",
+    "fastify": "^5.3.3",
+    "fastify-plugin": "^5.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
